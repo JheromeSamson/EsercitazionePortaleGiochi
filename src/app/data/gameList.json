@@ -1,0 +1,27 @@
+[
+    
+    {
+        "title": "Fortnite",
+        "genere": "Sparatutto in terza persona, Sandbox",
+        "origine": "Stati Uniti",
+        "sviluppo": "Epic Games, People Can Fly",
+        "publicazione": "Epic Games",
+        "modalitaGioco": "Giocatore singolo, Multigiocatore"
+        },
+    {
+        "title": "Call Of Duty",
+        "genere": "Sparatutto in prima persona",
+        "origine": "Stati Uniti",
+        "sviluppo": "Infinity Ward, Raven Software",
+        "publicazione": "Activition",
+        "modalitaGioco": "Multigiocatore, Battle Royale"
+    },
+    {
+        "title": "Apex Legends",
+        "genere": "Sparatutto in prima persona",
+        "origine": "Stati Uniti",
+        "sviluppo": "Respawn Entertainment",
+        "publicazione": "Electronic Arts",
+        "modalitaGioco": "Multigiocatore"
+    }
+]

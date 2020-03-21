@@ -1,0 +1,16 @@
+
+
+<div class="container">
+    <form (ngSubmit)="registrazione()">
+    <p>Registrazione</p>
+      <div class="form-group">
+        <label for="name">Name </label>
+        <input type="text" id="name" required [(ngModel)]="name" name="name">
+      </div>
+      <button type="submit" (click)="registrazione()">Invia</button>
+    </form>
+
+<div>
+    Nome: {{name}}
+</div>
+</div>

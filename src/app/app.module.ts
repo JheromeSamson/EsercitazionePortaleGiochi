@@ -7,6 +7,9 @@ import { GameListComponent } from './component/game-list/game-list.component';
 import { GameDetailComponent } from './component/game-detail/game-detail.component';
 import { GameEditComponent } from './component/game-edit/game-edit.component';
 import { RoutingModule } from './app-routing.module';
+import { RegistrationComponent } from './component/registration/registration.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -15,11 +18,13 @@ import { RoutingModule } from './app-routing.module';
     HomeComponent,
     GameListComponent,
     GameDetailComponent,
-    GameEditComponent
+    GameEditComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    RoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
