@@ -22,7 +22,7 @@ export class RegistrationComponent implements OnInit {
     sessionStorage.setItem("name", this.name);
 
     if (sessionStorage.getItem != null){
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/portale/home');
     }
   }
 

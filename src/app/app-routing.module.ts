@@ -12,13 +12,14 @@ import { AuthorizationService } from './service/auth/authorization.service';
 
 const appRoutes: Routes = [
 
-        { path: 'menu', component: MenuComponent, canActivate: [AuthorizationService]},
-        { path: 'home', component: HomeComponent, canActivate: [AuthorizationService]},
-        { path: 'game-list', component: GameListComponent, canActivate: [AuthorizationService]},
-        { path: 'game-detail', component: GameDetailComponent, canActivate: [AuthorizationService]},
-        { path: 'game-edit', component: GameEditComponent, canActivate: [AuthorizationService]},
-        { path: 'registration', component: RegistrationComponent}
-    
+    { path: 'portale', canActivateChild: [AuthorizationService], children: [
+        { path: 'menu', component: MenuComponent},
+        { path: 'home', component: HomeComponent},
+        { path: 'game-list', component: GameListComponent},
+        { path: 'game-detail', component: GameDetailComponent},
+        { path: 'game-edit', component: GameEditComponent}
+    ]},
+    { path: 'registration', component: RegistrationComponent}
 ];
 
 @NgModule({
