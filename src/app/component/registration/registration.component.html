@@ -6,11 +6,17 @@
       <div class="form-group">
         <label for="name">Name </label>
         <input type="text" id="name" required [(ngModel)]="name" name="name">
+        <label for="email">Email </label>
+        <input type="email" id="email" required [(ngModel)]="email" name="email">
+        <label for="password">Password </label>
+        <input type="password" id="password" required [(ngModel)]="password" name="password">
       </div>
       <button type="submit" (click)="registrazione()">Invia</button>
     </form>
 
 <div>
     Nome: {{name}}
+    Email: {{email}}
+    Password: {{password}}
 </div>
 </div>

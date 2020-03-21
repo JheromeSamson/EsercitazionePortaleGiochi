@@ -9,6 +9,7 @@ import { GameEditComponent } from './component/game-edit/game-edit.component';
 import { RoutingModule } from './app-routing.module';
 import { RegistrationComponent } from './component/registration/registration.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './component/header/header.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     GameListComponent,
     GameDetailComponent,
     GameEditComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
