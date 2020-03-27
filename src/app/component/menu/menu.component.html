@@ -1,6 +1,15 @@
 
-<ul>
-    <li *ngFor="let item of items" routerLink="{{item.url}}" routerLinkActive="active">
-        <span>{{item.description}}</span>
-    </li>
-</ul>
+<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item" *ngFor="let item of items" routerLink="{{item.url}}" routerLinkActive="active">
+            <a class="nav-link"><span>{{item.description}}</span></a>
+        </li>
+    </ul>
+    <div><p>{{nameUser}}</p></div>
+    <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</div>
+
+

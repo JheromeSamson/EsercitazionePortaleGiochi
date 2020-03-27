@@ -3,6 +3,7 @@ import { User } from 'src/app/model/user';
 import { EmitterVisitorContext } from '@angular/compiler';
 import { NgForm } from '@angular/forms';
 import { RouterLink, Router } from '@angular/router';
+import { AccessoService } from 'src/app/service/util/salvaAccesso/accesso.service';
 
 
 
@@ -13,20 +14,24 @@ import { RouterLink, Router } from '@angular/router';
 })
 export class RegistrationComponent implements OnInit {
   
+  user:User;
+
   name: string;
   email: string;
   password: string;
+
+  accesso: boolean = false;
   
-  constructor(public router: Router) {   }
+  constructor(private router: Router, private accessoService: AccessoService) {   }
 
   registrazione(){
-    console.log("nome: " + this.name);
-    sessionStorage.setItem("name", this.name);
-    sessionStorage.setItem("email", this.email);
-    sessionStorage.setItem("password", this.password);
+    this.user = new User(this.name,this.email,this.password);
+    this.accesso = this.accessoService.salvaRegistrazione(this.user);
 
-    if (sessionStorage.getItem != null ){
+    if (this.accesso){
       this.router.navigateByUrl('/portale/home');
+    }else {
+      console.log("GIA REGISTRATO");
     }
   }
 

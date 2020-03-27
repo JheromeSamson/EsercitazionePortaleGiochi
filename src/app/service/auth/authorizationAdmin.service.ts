@@ -5,12 +5,12 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthorizationService implements CanActivateChild{
+export class AuthorizationAdminService implements CanActivate{
 
   constructor(private router:Router) {}
-
-  canActivateChild(childRoute: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree{
-    if (sessionStorage.getItem('name') != null){
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
+    if (sessionStorage.getItem('name') === 'Admin'){
+      console.log("SONO NELL'AUTH" + sessionStorage.getItem('name'));
       return true;
     }else {
       this.router.navigateByUrl('/registration');

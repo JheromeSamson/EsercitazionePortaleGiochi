@@ -1,0 +1,23 @@
+
+
+<form class="form-inline">
+  <div class="form-row align-items-center">
+    <div class="col-mm-2 my-1">
+      <label class="sr-only" for="inlineFormInputGroupEmail">Email</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="email" class="form-control" required [(ngModel)]="email" name="email" id="inlineFormInputGroupUsername" placeholder="Email">
+      </div>
+    </div> 
+    <div class="col-sm-1 my-1">
+      <label class="sr-only" for="inlineFormInputPassword">Password</label>
+      <input type="password" class="form-control" required [(ngModel)]="password" name="password" id="inlineFormInputPassword"  placeholder="Password"> 
+    </div>
+    </div>
+    <div class="col-sm-1 my-1">
+      <button type="submit" class="btn btn-primary" (click)="accedi()">Submit</button>
+    </div>
+</form>
+

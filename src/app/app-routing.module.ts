@@ -7,6 +7,8 @@ import { GameDetailComponent } from './component/game-detail/game-detail.compone
 import { GameEditComponent } from './component/game-edit/game-edit.component';
 import { RegistrationComponent } from './component/registration/registration.component';
 import { AuthorizationService } from './service/auth/authorization.service';
+import { LoginComponent } from './component/login/login.component';
+import { AuthorizationAdminService } from './service/auth/authorizationAdmin.service';
 
 
 
@@ -15,11 +17,15 @@ const appRoutes: Routes = [
     { path: 'portale', canActivateChild: [AuthorizationService], children: [
         { path: 'menu', component: MenuComponent},
         { path: 'home', component: HomeComponent},
-        { path: 'game-list', component: GameListComponent},
-        { path: 'game-detail', component: GameDetailComponent},
-        { path: 'game-edit', component: GameEditComponent}
+        { path: 'game-edit',  component: GameEditComponent, canActivate: [AuthorizationAdminService]}, 
+        { path: 'game-list', component: GameListComponent, children: [
+            { path: 'game-detail/:id', component: GameDetailComponent}
+        ]},
+        
     ]},
-    { path: 'registration', component: RegistrationComponent}
+    { path: 'registration', component: RegistrationComponent},
+    { path: 'login', component: LoginComponent}
+    
 ];
 
 @NgModule({

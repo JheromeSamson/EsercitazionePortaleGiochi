@@ -3,9 +3,11 @@
     <h2>
         list from local json file...
     </h2>
-    <ul *ngFor="let item of gameList">
-       <li>
-          <h3>{{item.title}} {{item.genere}} {{item.origine}} {{item.sviluppo}} {{item.publicazione}} {{item.modalitaGioco}}</h3>
+    <ul >
+       <li *ngFor="let item of gameList" [routerLink]="['game-detail',item.id]" routerLinkActive="active">
+          <span>{{item.title}} </span>
        </li>
     </ul>
 </div>
+<router-outlet></router-outlet>
+<!--(activate)='onActivate($event)'-->

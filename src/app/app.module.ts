@@ -10,7 +10,8 @@ import { RoutingModule } from './app-routing.module';
 import { RegistrationComponent } from './component/registration/registration.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './component/header/header.component';
-
+import { LoginComponent } from './component/login/login.component';
+import { UserService } from './service/user/user.service';
 
 @NgModule({
   declarations: [
@@ -21,14 +22,17 @@ import { HeaderComponent } from './component/header/header.component';
     GameDetailComponent,
     GameEditComponent,
     RegistrationComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     RoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,4 +6,5 @@ export interface GiochiItem {
     sviluppo: string;
     publicazione: string;
     modalitaGioco: string;
+
 }

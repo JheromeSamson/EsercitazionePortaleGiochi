@@ -1,27 +1,220 @@
 [
     
     {
+        "id": "0",
         "title": "Fortnite",
         "genere": "Sparatutto in terza persona, Sandbox",
         "origine": "Stati Uniti",
         "sviluppo": "Epic Games, People Can Fly",
         "publicazione": "Epic Games",
-        "modalitaGioco": "Giocatore singolo, Multigiocatore"
+        "modalitaGioco": "Singolo, Multigiocatore",
+        "immagine": "fortnite"
         },
     {
+        "id": "1",
         "title": "Call Of Duty",
         "genere": "Sparatutto in prima persona",
         "origine": "Stati Uniti",
         "sviluppo": "Infinity Ward, Raven Software",
         "publicazione": "Activition",
-        "modalitaGioco": "Multigiocatore, Battle Royale"
+        "modalitaGioco": "Multigiocatore, Battle Royale",
+        "immagine": "cod"
     },
     {
+        "id": "2",
         "title": "Apex Legends",
         "genere": "Sparatutto in prima persona",
         "origine": "Stati Uniti",
         "sviluppo": "Respawn Entertainment",
         "publicazione": "Electronic Arts",
-        "modalitaGioco": "Multigiocatore"
+        "modalitaGioco": "Multigiocatore",
+        "immagine": "apex"
+    },
+
+    {
+        "id": "3",
+        "title": "Grand Theft Auto IV",
+        "genere": "Azione, Avventura",
+        "origine": "Regno Unito",
+        "sviluppo": "Rockstar North",
+        "publicazione": "Rockstar Games",
+        "modalitaGioco": "Singolo, Multiplayer Online",
+        "immagine": "gta"
+    },
+    {
+        "id": "4",
+        "title": "FIFA 20",
+        "genere": "Sport",
+        "origine": "Canada, Romania",
+        "sviluppo": "EA Canada, EA Romania",
+        "publicazione": "Electronic Arts",
+        "modalitaGioco": "Giocatore Singolo, Multigiocatore",
+        "immagine": "fifa"
+    },
+
+    {
+        "id": "5",
+        "title": "Red Dead Redemption 2",
+        "genere": "Avventura",
+        "origine": "Stati Uniti",
+        "sviluppo": "Rockstar Studios",
+        "publicazione": "Rockstar Games",
+        "modalitaGioco": "Singolo, Multiplayer",
+        "immagine": "rdr"
+    },
+
+    {
+        "id": "6",
+        "title": "The Elder Scrolls V: Skyrim",
+        "genere": "Action RPG",
+        "origine": "Stati Uniti",
+        "sviluppo": "Bethesda Game Studios",
+        "publicazione": "Bethesda Softworks",
+        "modalitaGioco": "Singolo",
+        "immagine": "theElderScrolls"
+    },
+
+    {
+        "id": "7",
+        "title": "The Sims 4",
+        "genere": "Simulatore di vita",
+        "origine": "Stati Uniti",
+        "sviluppo": "Maxis",
+        "publicazione": "Electronic Arts",
+        "modalitaGioco": "Singolo",
+        "immagine": "theSims"
+    },
+
+    {
+        "id": "8",
+        "title": "World of Warcraft",
+        "genere": "MMORPG",
+        "origine": "Stati Uniti",
+        "sviluppo": "Blizzard Entertainment",
+        "publicazione": "Vivendi Universal",
+        "modalitaGioco": "Multiplayer",
+        "immagine": "wow"
+    },
+
+    {
+        "id": "9",
+        "title": "Forza Horizon 4",
+        "genere": "Simulatore di guida",
+        "origine": "Regno Unito",
+        "sviluppo": "Playground Games, Turn 10 Studios",
+        "publicazione": "Microsoft Game Studios",
+        "modalitaGioco": "Singolo, Multiplayer",
+        "immagine": "forzaHorizon"
+    },
+
+    {
+        "id": "10",
+        "title": "Assassin's Creed: Odyssey",
+        "genere": "Action RPG",
+        "origine": "Canada",
+        "sviluppo": "Ubisoft Quebec",
+        "publicazione": "Ubisoft",
+        "modalitaGioco": "Singolo",
+        "immagine": "assasinsCreed"
+    },
+
+    {
+        "id": "11",
+        "title": "Gears 5",
+        "genere": "Sparatutto in terza persona",
+        "origine": "Canada",
+        "sviluppo": "The Coalition",
+        "publicazione": "Xbox Game Studios",
+        "modalitaGioco": "Singolo, Multigiocatore",
+        "immagine": "gears"
+    },
+
+    {
+        "id": "12",
+        "title": "F1 2019",
+        "genere": "Formula 1",
+        "origine": "Regno Unito",
+        "sviluppo": "Codemasters Birmingham",
+        "publicazione": "Codemasters",
+        "modalitaGioco": "Singolo, Multigiocatore",
+        "immagine": "f1"
+    },
+
+    {
+        "id": "13",
+        "title": "Borderlands 3",
+        "genere": "Sparatutto in prima persona, action RPG",
+        "origine": "Stati Uniti",
+        "sviluppo": "Gearbox Software",
+        "publicazione": "2K Games",
+        "modalitaGioco": "Singolo, Multigiocatore",
+        "immagine": "borderlands"
+    },
+
+    {
+        "id": "14",
+        "title": "Tom Clancy's The Division",
+        "genere": "Action RPG, Sparatutto in terza persona",
+        "origine": "Polonia",
+        "sviluppo": "CD Projekt RED",
+        "publicazione": "CD Projekt",
+        "modalitaGioco": "Multigiocatore, Co-op",
+        "immagine": "tomClancy"
+    },
+
+    {
+        "id": "15",
+        "title": "The Witcher 3: Wild Hunt",
+        "genere": "Action RPG",
+        "origine": "Svezia",
+        "sviluppo": "Massive Entertainment",
+        "publicazione": "Ubisoft",
+        "modalitaGioco": "Singolo",
+        "immagine": "theWitcher"
+    },
+
+    {
+        "id": "16",
+        "title": "Metro Exodus",
+        "genere": "Sparatutto in prima persona",
+        "origine": "Ucraina",
+        "sviluppo": "4A Games",
+        "publicazione": "Deep Silver",
+        "modalitaGioco": "Singolo",
+        "immagine": "metroExodus"
+    },
+
+    {
+        "id": "17",
+        "title": "Resident Evil 7: Biohazard",
+        "genere": "Sparatutto in prima persona, Avventura dinamica, Survival horror",
+        "origine": "Giappone",
+        "sviluppo": "Capcom",
+        "publicazione": "Capcom",
+        "modalitaGioco": "Singolo",
+        "immagine": "residentEvil"
+    },
+
+    {
+        "id": "18",
+        "title": "Civilization VI",
+        "genere": "Strategia",
+        "origine": "Stati Uniti",
+        "sviluppo": "Firaxis Games",
+        "publicazione": "2K Games",
+        "modalitaGioco": "Singolo",
+        "immagine": "civilization"
+    },
+
+    {
+        "id": "19",
+        "title": "Battlefield V",
+        "genere": "Sparatutto in prima persona",
+        "origine": "Svezia",
+        "sviluppo": "Digital Illusions Creative Entertainment",
+        "publicazione": "Electronic Arts",
+        "modalitaGioco": "Singolo, Multigiocatore, Battle Royale",
+        "immagine": "battlefield"
     }
+
 ]
