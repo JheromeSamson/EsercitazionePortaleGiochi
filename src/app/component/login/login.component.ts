@@ -19,15 +19,15 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  accedi(){
+  accedi() {
 
     this.accesso = this.accessoService.salvaLogin(this.email, this.password);
-    
-    if (this.accesso){
+
+    if (this.accesso) {
       this.refresh();
-      this.router.navigateByUrl("portale/home");
-    }else{
-      console.log("Non Sei Loggato!!!");
+      this.router.navigateByUrl('portale/home');
+    } else {
+      console.log('Non Sei Loggato!!!');
     }
 
   }

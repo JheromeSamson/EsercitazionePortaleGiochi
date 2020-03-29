@@ -6,19 +6,19 @@ import { User } from 'src/app/model/user';
 })
 export class UserService {
 
-  user:User;
+  user: User;
 
   constructor() { }
 
-  getUser(){
+  getUser() {
     return this.user;
   }
 
-  deleteUser(){
+  deleteUser() {
     this.user = null;
   }
 
-  setUser(user: User){
+  setUser(user: User) {
     this.user = user;
   }
 }
