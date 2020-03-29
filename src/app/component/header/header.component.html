@@ -1,12 +1,24 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" routerLink="portale/home"><img src="../../../assets/immagini/logo.png" id="logo_navbar"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <app-menu></app-menu>
-   
-    <app-login></app-login>
-  
-    <button class="btn btn-primary" (click)="logout()">Log out</button>
-</nav>
+<div class="wrapper navbar navbar-dark bg-dark">
+
+    <div class="one">
+
+      <app-menu></app-menu>
+    </div>
+  <div class="two">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+    <div class="tree">
+      <div *ngIf="!loggato; else logoutButton">
+        <app-login></app-login>
+      </div>
+      <ng-template #logoutButton>
+{{name}}
+        <button class="btn btn-primary" (click)="logout()">Log out</button>
+      </ng-template>
+    </div>
+
+</div>
 

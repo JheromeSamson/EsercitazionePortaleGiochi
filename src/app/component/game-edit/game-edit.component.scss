@@ -1,0 +1,21 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-column-start: auto;
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+  border: 1px solid red;
+}
+.two {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  border: 1px solid red;
+}
+.three {
+  grid-column: 3 / 4;
+  grid-row: 1;
+  border: 1px solid red;
+}

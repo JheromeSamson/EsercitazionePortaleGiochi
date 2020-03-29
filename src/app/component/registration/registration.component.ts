@@ -58,6 +58,10 @@ export class RegistrationComponent implements OnInit {
     }
   }
 
+  reset() {
+    this.myForm.reset();
+  }
+
   // GETTERS & SETTERS
 
   get name() {
