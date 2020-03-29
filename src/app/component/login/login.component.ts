@@ -24,8 +24,8 @@ export class LoginComponent implements OnInit {
     this.accesso = this.accessoService.salvaLogin(this.email, this.password);
 
     if (this.accesso) {
-      this.refresh();
       this.router.navigateByUrl('portale/home');
+      this.refresh();
     } else {
       console.log('Non Sei Loggato!!!');
     }

@@ -11,7 +11,6 @@ import { RegistrationComponent } from './component/registration/registration.com
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HeaderComponent } from './component/header/header.component';
 import { LoginComponent } from './component/login/login.component';
-import { UserService } from './service/user/user.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
@@ -43,9 +42,7 @@ import {MatChipsModule} from '@angular/material/chips';
     MatCheckboxModule,
     MatChipsModule
   ],
-  providers: [
-    UserService
-  ],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

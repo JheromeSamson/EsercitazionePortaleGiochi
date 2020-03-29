@@ -1,6 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
-import { MenuComponent } from './component/menu/menu.component';
 
 
 @Component({
@@ -10,8 +8,4 @@ import { MenuComponent } from './component/menu/menu.component';
 })
 export class AppComponent {
   title = 'EsercitazionePortaleGiochi';
-
-
-
-  
 }

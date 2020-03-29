@@ -7,12 +7,12 @@ import { Observable } from 'rxjs';
 })
 export class AuthorizationService implements CanActivateChild{
 
-  constructor(private router:Router) {}
+  constructor(private router: Router) {}
 
   canActivateChild(childRoute: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree{
-    if (sessionStorage.getItem('name') != null){
+    if (sessionStorage.getItem('user') != null) {
       return true;
-    }else {
+    } else {
       this.router.navigateByUrl('/registration');
       return false;
     }

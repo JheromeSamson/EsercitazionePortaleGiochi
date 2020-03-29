@@ -1,7 +1,7 @@
 
 <div class="container">
 
-  <form [formGroup]="myForm">
+  <form [formGroup]="myForm" (ngSubmit)="registrazione()">
 
     Value:   {{myForm.value | json}}
     <br><br><br>
@@ -9,17 +9,62 @@
     <h2>Registrazione</h2>
     <hr>
     <div class="form-group">
-      <label for="name">Name </label>
+      <label for="name">Nome </label>
         <input type="text" class="form-control" id="name" formControlName="name">
         <p *ngIf="name.invalid && name.touched" class="dangerInput">*Nome richiesto</p>​
+      <label for="lastname">Cognome </label>
+        <input type="text" class="form-control" id="lastname" formControlName="lastname">
+        <p *ngIf="lastname.invalid && lastname.touched" class="dangerInput">*Cognome richiesto</p>​
+      <label for="birthday">Data di Nascita </label>
+        <input type="date" class="form-control" id="birthday" formControlName="birthday">
+        <p *ngIf="birthday.invalid && birthday.touched" class="dangerInput">*Data di Nascita richiesto</p>​
+      <label for="sex">Sesso </label>
+      <div id="sex" class="form-check">
+        <div class="form-check form-check-inline">
+          <input type="radio"  class="form-check-input" value="uomo" id="uomo" formControlName="sex" >
+          <label for="uomo">Uomo</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" class="form-check-input" value="donna" id="donna" formControlName="sex">
+          <label for="donna">Donna</label>
+        </div>
+      </div>
+        <p *ngIf="sex.invalid && sex.touched" class="dangerInput">*Sesso richiesto</p>​
+
+      <label for="residenza">Residenza </label>
+
+      <div class="form-row" id="residenza" formGroupName="residenza">
+        <div class="form-group col-md-3">
+          <label for="generale">Denominazione Generale</label>
+          <select id="generale" class="form-control" formControlName="denominazioneGenerale">
+            <option selected>Scegli...</option>
+            <option value="Via"> Via </option>
+            <option value="Piazza"> Viale </option>
+          </select>
+        </div>
+        <div class="form-group col-md-7">
+          <label for="ufficiale">Denominazione Ufficiale</label>
+          <input type="text" class="form-control" id="ufficiale" formControlName="denominazioneUfficiale">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">N° Civico</label>
+          <input type="text" class="form-control" id="inputZip" formControlName="numeroCivico">
+        </div>
+        <p *ngIf="residenza.invalid && residenza.touched" class="dangerInput">*Richiesto</p>​
+      </div>
+
+      <label for="username">Username </label>
+        <input id="username" class="form-control" formControlName="username">
+        <p *ngIf="username.invalid && username.touched" class="dangerInput">*Username richiesto</p>​
       <label for="email">Email </label>
         <input id="email" class="form-control" formControlName="email">
         <p *ngIf="email.invalid && email.touched" class="dangerInput">*Email richiesto</p>​
       <label for="password">Password </label>
         <input id="password" class="form-control" formControlName="password">
         <p *ngIf="password.invalid && password.touched" class="dangerInput">*Password richiesto</p>​
+
     </div>
-    <button type="submit" class="btn btn-primary">Registrati</button>
+    <button type="submit" [disabled]="myForm.status === 'INVALID'" class="btn btn-primary">Registrati</button>
     <button type="button" class="btn btn-secondary" >Reset</button>​
   </form>
 

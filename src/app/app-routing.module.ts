@@ -17,19 +17,17 @@ const appRoutes: Routes = [
     { path: 'portale', canActivateChild: [AuthorizationService], children: [
         { path: 'menu', component: MenuComponent},
         { path: 'home', component: HomeComponent},
-        { path: 'game-edit',  component: GameEditComponent, canActivate: [AuthorizationAdminService]}, 
+        { path: 'game-edit',  component: GameEditComponent, canActivate: [AuthorizationAdminService]},
         { path: 'game-list', component: GameListComponent, children: [
             { path: 'game-detail/:id', component: GameDetailComponent}
         ]},
-        
     ]},
     { path: 'registration', component: RegistrationComponent},
     { path: 'login', component: LoginComponent}
-    
 ];
 
 @NgModule({
-    imports:[
+    imports: [
         RouterModule.forRoot(appRoutes)
     ],
     exports: [
@@ -37,4 +35,4 @@ const appRoutes: Routes = [
     ]
 })
 
-export class RoutingModule{}
+export class RoutingModule { }
