@@ -5,10 +5,20 @@
       <app-menu></app-menu>
     </div>
   <div class="two">
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input type="text" [(ngModel)]="cerca" placeholder="Genere" matInput [formControl]="myControl" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <button type="button" class="btn btn-primary" (click)="search()">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
     </form>
+
   </div>
     <div class="tree">
       <div *ngIf="!loggato; else logoutButton">

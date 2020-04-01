@@ -19,6 +19,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {MatListModule} from '@angular/material/list';
     MatCheckboxModule,
     MatChipsModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatAutocompleteModule
   ],
   providers: [  ],
   bootstrap: [AppComponent]

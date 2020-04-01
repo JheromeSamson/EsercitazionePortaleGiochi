@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/model/user';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import { RouterLink, Router } from '@angular/router';
 import { AccessoService } from 'src/app/service/util/salvaAccesso/accesso.service';
+
 
 
 
@@ -18,6 +19,7 @@ export class RegistrationComponent implements OnInit {
   password: string;*/
   user: User;
   accesso = false;
+
 
   myForm: FormGroup;
 
@@ -41,8 +43,8 @@ export class RegistrationComponent implements OnInit {
     });
 
     this.myForm.valueChanges.subscribe(console.log);
-  }
 
+  }
 
   registrazione() {
 
@@ -55,6 +57,7 @@ export class RegistrationComponent implements OnInit {
       this.router.navigateByUrl('/portale/home');
     } else {
       console.log('GIA REGISTRATO');
+      this.router.navigateByUrl('/portale/home');
     }
   }
 
