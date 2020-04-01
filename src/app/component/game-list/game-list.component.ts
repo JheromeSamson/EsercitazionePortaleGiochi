@@ -13,6 +13,8 @@ export class GameListComponent implements OnInit {
   @Output()
  gameDetail;
 
+  showFiller = false;
+
     public gameList: {
               id: string,
               title: string,

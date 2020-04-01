@@ -16,38 +16,38 @@ export class GameDetailComponent implements OnInit {
 gameIndex$;
 
  routeSub: Subscription;
-  
 @Input() childMessage;
 
 appoggio: GiochiItem;
 
-immagine;
+immagine: string;
 
 constructor(private route: ActivatedRoute,
-  private router: Router,
-  private service: GameListService,
+            private router: Router,
+            private service: GameListService,
 
-  private immagineService: GestoreImmagineService) {}
+            private immagineService: GestoreImmagineService) {}
 
-ngOnInit(){    
+ngOnInit() {
 /*
   let id = this.route.snapshot.paramMap.get('id');
   this.gameIndex$ = this.service.getGameListById(id);
 */
   this.routeSub = this.route.params.subscribe(params => {
-    
-    this.gameIndex$ = this.service.getGameListById(params['id']);
+
+    this.gameIndex$ = this.service.getGameListById(params.id);
     console.log(this.gameIndex$);
+    this.getImmagine();
 
   });
 }
 
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.routeSub.unsubscribe();
   }
 
-  dettagli(){
-        
+  getImmagine() {
+  this.immagine = '../../assets/immagini/giochi/' + this.gameIndex$.immagine + '.png';
   }
 
 }

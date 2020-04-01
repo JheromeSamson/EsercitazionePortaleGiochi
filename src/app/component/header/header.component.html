@@ -14,11 +14,13 @@
       <div *ngIf="!loggato; else logoutButton">
         <app-login></app-login>
       </div>
-      <ng-template #logoutButton>
-{{name}}
+      <ng-template #logoutButton >
+        <div class="logout">
+          <span id="name"> Ciao {{name}} </span>
         <button class="btn btn-primary" (click)="logout()">Log out</button>
-      </ng-template>
-    </div>
+        </div>
+      </ng-template></div>
+
 
 </div>
 

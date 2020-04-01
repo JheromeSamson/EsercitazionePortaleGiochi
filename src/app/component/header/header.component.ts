@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Output} from '@angular/core';
 import { User } from 'src/app/model/user';
 import {UserService} from '../../service/user/user.service';
 
@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   user;
   name;
   loggato = false;
+
 
   constructor() {
     this.getUtenteLoggato();

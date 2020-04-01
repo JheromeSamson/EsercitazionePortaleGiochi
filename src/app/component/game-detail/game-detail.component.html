@@ -1,3 +1,12 @@
-<p>game-detail works!</p>
 
-<p>Messaggio: {{gameIndex$.title}}</p>
+<img [src]="immagine" class="immagine-gioco-background" >
+
+<div class="dettagli-giochi">
+  <p>Titolo: {{gameIndex$.title}}</p>
+  <p>Genere: {{gameIndex$.genere}}</p>
+  <p>Origine: {{gameIndex$.origine}}</p>
+  <p>Sviluppo: {{gameIndex$.sviluppo}}</p>
+  <p>Publicazione: {{gameIndex$.publicazione}}</p>
+  <p>Modalita di Gioco: {{gameIndex$.modalitaGioco}}</p>
+</div>
+

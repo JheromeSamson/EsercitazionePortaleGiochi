@@ -17,6 +17,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import {MatChipsModule} from '@angular/material/chips';
     MatButtonModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [  ],
   bootstrap: [AppComponent]
